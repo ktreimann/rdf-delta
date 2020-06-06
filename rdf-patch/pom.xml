@@ -21,14 +21,14 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>rdf-patch</artifactId>
   <packaging>jar</packaging>
-  <version>0.8.2</version>
+  <version>${ver.delta}</version>
 
   <name>RDF Patch</name>
 
   <parent>
     <groupId>org.seaborne.rdf-delta</groupId>
     <artifactId>rdf-delta</artifactId>
-    <version>0.8.2</version>
+    <version>0.8.3</version>
   </parent>
 
   <dependencies>
@@ -41,6 +41,20 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-jdk14</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-web</artifactId>
+      <version>${ver.log4j2}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>${ver.comcodec}</version>
       <scope>test</scope>
     </dependency>
 

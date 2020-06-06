@@ -21,8 +21,6 @@ import java.util.UUID;
 
 import org.apache.jena.graph.Node;
 import org.apache.jena.graph.NodeFactory;
-import org.apache.jena.shared.uuid.UUIDFactory;
-import org.apache.jena.shared.uuid.UUID_V4_Gen;
 
 /** Some functions to do with {@link Node Nodes}. */
 public class N {
@@ -32,10 +30,10 @@ public class N {
     private static final String SCHEME = SchemeUuid;
     // Version 1 are guessable.
     // Version 4 are not.
-    private static UUIDFactory uuidFactory = new UUID_V4_Gen();
+    //private static UUIDFactory uuidFactory = new UUID_V4_Gen();
 
     /** Generate a UUID */
-    public static UUID genUUID() { return uuidFactory.generate().asUUID() ; }
+    public static UUID genUUID() { return UUID.randomUUID() ; }
 
     /**
      * This is <i>not</i> a function!

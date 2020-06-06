@@ -20,6 +20,7 @@ package org.seaborne.delta.server.http;
 import java.io.IOException ;
 import java.nio.charset.StandardCharsets ;
 
+import javax.servlet.ServletException ;
 import javax.servlet.http.HttpServletRequest ;
 import javax.servlet.http.HttpServletResponse ;
 
@@ -39,7 +40,7 @@ public class HttpErrorHandler extends /*Jetty*/ErrorHandler {
     public static final String METHOD_PATCH     = "PATCH" ;
     
     @Override
-    public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         if ( request.getMethod().equals(METHOD_POST)) {
             response.setContentType(WebContent.contentTypeTextPlain);
             response.setCharacterEncoding(WebContent.charsetUTF8) ;

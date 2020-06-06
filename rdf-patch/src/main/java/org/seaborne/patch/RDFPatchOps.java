@@ -30,13 +30,13 @@ import org.apache.jena.graph.Node;
 import org.apache.jena.graph.NodeFactory;
 import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.riot.system.StreamRDF;
-import org.apache.jena.shared.uuid.JenaUUID;
 import org.apache.jena.sparql.core.DatasetGraph;
 import org.seaborne.patch.binary.RDFChangesWriterBinary;
 import org.seaborne.patch.binary.RDFPatchReaderBinary;
 import org.seaborne.patch.changes.*;
 import org.seaborne.patch.system.DatasetGraphChanges;
 import org.seaborne.patch.system.GraphChanges;
+import org.seaborne.patch.system.N;
 import org.seaborne.patch.system.RDFPatchAltHeader;
 import org.seaborne.patch.text.RDFPatchReaderText;
 import org.seaborne.patch.text.TokenWriter;
@@ -66,7 +66,7 @@ public class RDFPatchOps {
 
     private static class RDFPatchEmpty implements RDFPatch {
         // id, no previous.
-        private final Node id = NodeFactory.createURI(JenaUUID.generate().asURI());
+        private final Node id = N.unique();
         private final PatchHeader header = new PatchHeader(Collections.singletonMap(RDFPatchConst.ID, id));
 
         RDFPatchEmpty() {}

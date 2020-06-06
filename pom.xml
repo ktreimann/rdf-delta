@@ -23,7 +23,7 @@
   <groupId>org.seaborne.rdf-delta</groupId>
   <artifactId>rdf-delta</artifactId>
   <packaging>pom</packaging>
-  <version>0.8.2</version>
+  <version>0.8.3</version>
 
   <name>RDF Delta</name>
   <url>https://afs.github.io/rdf-delta/</url>
@@ -47,7 +47,7 @@
     <connection>scm:git:https://github.com:afs/rdf-delta.git</connection>
     <developerConnection>scm:git:git@github.com:afs/rdf-delta.git</developerConnection>
     <url>https://github.com/afs/rdf-delta.git</url>
-    <tag>v0.8.2</tag>
+    <tag>v${ver.delta}</tag>
   </scm>
 
   <developers>
@@ -69,9 +69,12 @@
     <build.time.xsd>${maven.build.timestamp}</build.time.xsd>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <ver.jena>3.13.1</ver.jena>
+    <ver.delta>0.8.3</ver.delta>
+    <ver.jena>3.15.0</ver.jena>
 
-    <ver.jetty>9.4.12.v20180830</ver.jetty> <!-- Keep in step with Jena -->
+    <!-- Jena 3.14.0 <ver.jetty>9.4.12.v20180830</ver.jetty> -->
+    <!-- Jena 3.15.0 <ver.jetty>9.4.26.v20200117</ver.jetty> -->
+    <ver.jetty>9.4.26.v20200117</ver.jetty> <!-- Keep in step with Jena -->
     <ver.junit>4.12</ver.junit>
     <ver.slf4j>1.7.26</ver.slf4j>
     <ver.log4j>1.2.17</ver.log4j>
@@ -81,6 +84,7 @@
     <ver.aws-s3>1.11.512</ver.aws-s3>
     <ver.s3mock>0.2.5</ver.s3mock>
     <ver.awaitility>3.1.1</ver.awaitility>
+    <ver.comcodec>1.14</ver.comcodec>
   </properties>
   
   <modules>
