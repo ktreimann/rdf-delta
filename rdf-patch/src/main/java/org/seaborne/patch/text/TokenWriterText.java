@@ -233,16 +233,12 @@ public class TokenWriterText implements TokenWriter {
         gap(true);
     }
 
-    private static String cntrlAsString(char cntrl) {
-        return Character.toString((char)TokenizerText.CTRL_CHAR) + Character.toString(cntrl);
-    }
-
-    @Override
-    public void sendControl(char controlChar) {
-        String x = cntrlAsString(controlChar);
-        write(x);
-        gap(false);
-    }
+//    @Override
+//    public void sendControl(char controlChar) {
+//        String x = cntrlAsString(controlChar);
+//        write(x);
+//        gap(false);
+//    }
 
     @Override
     public void sendNumber(long number) {

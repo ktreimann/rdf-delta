@@ -23,7 +23,7 @@
   <groupId>org.seaborne.rdf-delta</groupId>
   <artifactId>rdf-delta</artifactId>
   <packaging>pom</packaging>
-  <version>0.8.3</version>
+  <version>0.8.4</version>
 
   <name>RDF Delta</name>
   <url>https://afs.github.io/rdf-delta/</url>
@@ -69,8 +69,8 @@
     <build.time.xsd>${maven.build.timestamp}</build.time.xsd>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <ver.delta>0.8.3</ver.delta>
-    <ver.jena>3.15.0</ver.jena>
+    <ver.delta>0.8.4</ver.delta>
+    <ver.jena>3.16.0</ver.jena>
 
     <!-- Jena 3.14.0 <ver.jetty>9.4.12.v20180830</ver.jetty> -->
     <!-- Jena 3.15.0 <ver.jetty>9.4.26.v20200117</ver.jetty> -->
