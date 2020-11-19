@@ -1,3 +1,12 @@
+This branch is version `0.8.2-tq-1`, a patch on top of RDF Delta 0.8.2
+that uses Jena 3.15.0. To deploy to TQ's repository:
+
+```
+mvn clean deploy -DaltDeploymentRepository=tq-all::default::https://nexus.topquadrant.com/repository/tq-all
+```
+
+---
+
 # RDF Delta
 
 RDF Delta provides a system for recording and publishing changes to RDF
