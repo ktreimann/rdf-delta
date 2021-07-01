@@ -45,7 +45,7 @@
     <dependency>
       <groupId>org.seaborne.rdf-delta</groupId>
       <artifactId>rdf-delta-server-local</artifactId> 
-      <version>0.9.3-SNAPSHOT</version>
+      <version>1.0.0</version>
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
